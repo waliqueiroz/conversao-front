@@ -1,4 +1,4 @@
-# CRUD APP
+# APP
 
 ## Baixar dependências
 ```
