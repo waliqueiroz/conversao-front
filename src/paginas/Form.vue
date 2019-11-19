@@ -52,7 +52,15 @@ export default {
     },
     mounted() {},
     methods: {
-        cadastrar() {}
+        async cadastrar() {
+            try {
+                const resposta = await api.post("/api/usuarios/criar", this.dados);
+                const usuario = resposta.data;
+                this.$router.push(`link/${usuario.id}`);
+            } catch (error) {
+                console.log(error);
+            }
+        }
     },
     watch: {}
 };

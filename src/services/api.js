@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-const api = axios.create({baseURL: 'https://jsonbox.io/box_ecb73b15b931edd8ad8d'});
+const api = axios.create({baseURL: 'http://localhost:8000'});
 
 export default api;

@@ -7,10 +7,10 @@
                     Este é seu link de convite exclusivo.
                 </p>
                 <div class="form-group">
-                    <input v-model="link" type="text" class="form-control" name="link" placeholder="Link" required="required" />
+                    <input ref="link" v-model="link" type="text" class="form-control" name="link" placeholder="Link" required="required" />
                 </div>
                 <div class="form-group">
-                    <button type="buton" class="btn btn-success btn-lg btn-block">
+                    <button @click="copiar()" type="button" class="btn btn-success btn-lg btn-block">
                         Copiar
                     </button>
                 </div>
@@ -20,6 +20,7 @@
 </template>
 
 <script>
+import api from "@/services/api";
 export default {
     name: "Confirmacao",
     data() {
@@ -27,9 +28,24 @@ export default {
             link: ""
         };
     },
-    mounted() {},
+    mounted() {
+        this.getLink();
+    },
     methods: {
-        cadastrar() {}
+        copiar(){
+            this.$refs.link.select();
+            document.execCommand('copy');
+            // console.log(this.$refs.link.value.select());
+        },
+        async getLink() {
+            try {
+                const resposta = await api.post(`/api/usuarios/getById/${this.$route.params.id}`, this.dados);
+                const hash = resposta.data.link.hash;
+                this.link = `http://localhost:8080/invite/${hash}`
+            } catch (error) {
+                console.log(error);
+            }
+        }
     }
 };
 </script>
