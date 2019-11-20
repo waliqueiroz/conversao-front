@@ -6,7 +6,7 @@ A aplicação foi desenvolvida com o framework Vue.js.
 
 - [NPM](https://www.npmjs.com/get-npm)
 
-### 2. Baixar dependências
+## 2. Baixar dependências
 
 Dentro do diretório raiz execute o comando:
 
@@ -14,14 +14,14 @@ Dentro do diretório raiz execute o comando:
 npm install
 ```
 
-### 3. Inicializar servidor de desenvolvimento
+## 3. Inicializar servidor de desenvolvimento
 
 Dentro do diretório raiz execute o comando:
 ```
 npm run serve
 ```
 
-### 4. Compilar versão para produção
+## 4. Compilar versão para produção
 
 Dentro do diretório raiz execute o comando:
 ```
