@@ -1,6 +1,6 @@
 # Aplicação simples para cadastro e usuários
 
-A aplicação foi construída com o framework Vue.js.
+A aplicação foi desenvolvida com o framework Vue.js.
 
 ## 1. Pré-requisitos
 
