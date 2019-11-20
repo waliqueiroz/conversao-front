@@ -1,4 +1,10 @@
-# APP
+# Aplicação simples para cadastro e usuários
+
+A aplicação foi construída com o framework Vue.js.
+
+## 1. Pré-requisitos
+
+- [NPM](https://www.npmjs.com/get-npm)
 
 ## Baixar dependências
 
