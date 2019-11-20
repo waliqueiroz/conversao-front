@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Template from '@/components/Template'
 import Form from '@/paginas/Form'
-import Confirmacao from '@/paginas/Confirmacao'
+import Link from '@/paginas/Link'
 Vue.use(Router)
 
 export default new Router({
@@ -27,7 +27,7 @@ export default new Router({
         {
           path: 'link/:id',
           name: 'Link',
-          component: Confirmacao,
+          component: Link,
         },
       ]
     },

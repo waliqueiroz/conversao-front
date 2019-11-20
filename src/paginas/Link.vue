@@ -22,7 +22,7 @@
 <script>
 import api from "@/services/api";
 export default {
-    name: "Confirmacao",
+    name: "Link",
     data() {
         return {
             link: ""
@@ -35,7 +35,6 @@ export default {
         copiar(){
             this.$refs.link.select();
             document.execCommand('copy');
-            // console.log(this.$refs.link.value.select());
         },
         async getLink() {
             try {
