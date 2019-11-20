@@ -7,9 +7,9 @@ Aplicação simples que realiza um cadastro básico de usuários.
 - Após o cadastro inicial o usuário recebe um email de confirmação de cadastro.
 - Quando um usuário se cadastra a partir de um convite, ele recebe o email de confirmação de cadastro e o dono do link recebe um email de aviso.
 
-- A aplicação foi desenvolvida com o framework Vue.js.
+A aplicação foi desenvolvida com o framework Vue.js.
 
-- O backend está disponível [neste repositório](https://github.com/waliqueiroz/conversao-back).
+O backend está disponível [neste repositório](https://github.com/waliqueiroz/conversao-back).
 
 ## 1. Pré-requisitos
 
