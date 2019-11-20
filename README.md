@@ -1,6 +1,6 @@
 # Aplicação simples para cadastro e usuários
 
-- Aplicação simples que realiza um cadastro básico de usuários. 
+Aplicação simples que realiza um cadastro básico de usuários. 
 - Após o cadastro, o usuário recebe um link único para indicação de cadastro de outros usuários.
 - Quando um determinado usuário se cadastra a partir de um link único de outro, a base de dados guarda a informação que foi uma “indicação” e qual usuário indicou.
 - A página é responsiva (Mobile first).
