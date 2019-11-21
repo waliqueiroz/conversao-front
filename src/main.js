@@ -1,13 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueSweetalert2 from 'vue-sweetalert2'
 import NProgress from 'nprogress';
 
 // If you don't need the styles, do not connect
 import '../node_modules/nprogress/nprogress.css'
-
-Vue.use(VueSweetalert2);
 
 Vue.config.productionTip = false
 
