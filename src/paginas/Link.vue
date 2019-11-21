@@ -40,7 +40,7 @@ export default {
             try {
                 const resposta = await api.post(`/api/usuarios/getById/${this.$route.params.id}`, this.dados);
                 const hash = resposta.data.link.hash;
-                this.link = `${window.location.hostname}:${window.location.port}/invite/${hash}`
+                this.link = `${window.location.hostname}/invite/${hash}`
             } catch (error) {
                 console.log(error);
             }
